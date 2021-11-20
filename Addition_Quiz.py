@@ -17,5 +17,11 @@ def random_numbers_sum_score():
     sum = num1 + num2
 
     user_answer = int(input("Sum: "))
-    
+
+    if sum == user_answer:
+        score_count += 1
+        print("Correct!")
+    else:
+        print("Wrong!")
+
 random_numbers_sum_score()
