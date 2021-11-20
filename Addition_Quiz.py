@@ -5,3 +5,10 @@
 # Display the result summary of the 10 operations (ex 9/10)
 
 import random
+
+def random_numbers_sum_score():
+    score_count = 0
+    score_limit = 0
+
+
+random_numbers_sum_score()
