@@ -10,18 +10,25 @@ def random_numbers_sum_score():
     score_count = 0
     score_limit = 0
 
-    num1 = random.randint(0, 99)
-    num2 = random.randint(0, 99)
-    print(f"First number: {num1}")
-    print(f"Second number: {num2}")
-    sum = num1 + num2
+    # Evaluating if the user got the correct answer
+    while score_limit <= 10:
+        num1 = random.randint(0, 99)
+        num2 = random.randint(0, 99)
+        print(f"First number: {num1}")
+        print(f"Second number: {num2}")
+        sum = num1 + num2
 
-    user_answer = int(input("Sum: "))
+        user_answer = int(input("Sum: "))
+        score_limit += 1
 
-    if sum == user_answer:
-        score_count += 1
-        print("Correct!")
+        if sum == user_answer:
+            score_count += 1
+            print("Correct!")
+        else:
+            print("Wrong!")
     else:
-        print("Wrong!")
+        print(f"Score: {score_count}/10")
+    return
+
 
 random_numbers_sum_score()
