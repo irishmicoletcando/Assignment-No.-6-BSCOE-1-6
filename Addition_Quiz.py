@@ -10,5 +10,9 @@ def random_numbers_sum_score():
     score_count = 0
     score_limit = 0
 
+    num1 = random.randint(0, 99)
+    num2 = random.randint(0, 99)
+    print(f"First number: {num1}")
+    print(f"Second number: {num2}")
 
 random_numbers_sum_score()
