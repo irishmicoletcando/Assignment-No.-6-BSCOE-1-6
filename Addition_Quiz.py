@@ -14,5 +14,6 @@ def random_numbers_sum_score():
     num2 = random.randint(0, 99)
     print(f"First number: {num1}")
     print(f"Second number: {num2}")
+    sum = num1 + num2
 
 random_numbers_sum_score()
