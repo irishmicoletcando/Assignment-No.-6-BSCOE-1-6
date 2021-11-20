@@ -16,4 +16,6 @@ def random_numbers_sum_score():
     print(f"Second number: {num2}")
     sum = num1 + num2
 
+    user_answer = int(input("Sum: "))
+    
 random_numbers_sum_score()
