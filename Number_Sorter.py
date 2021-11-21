@@ -96,6 +96,10 @@ def ask_num():
                     descending = num4, num3, num2, num1
                 return descending
 
-                
+        # Four numbers equal
+        if num1 == num2 == num3 == num4:
+            descending = num4, num3, num2, num1
+            return descending
+
 descending_order = ask_num()
 print(f"Numbers in descending order: {descending_order}")
