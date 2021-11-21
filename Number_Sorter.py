@@ -31,4 +31,8 @@ def ask_num():
                     descending = num1, num4, num3, num2
                 else:
                     descending = num1, num4, num2, num3
-                return descending 
+                return descending
+
+
+descending_order = ask_num()
+print(f"Numbers in descending order: {descending_order}")
