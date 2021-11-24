@@ -42,13 +42,13 @@ def ask_num():
                     descending = num2, num1, num4, num3
                 return descending
             elif num3 > num1 and num3 > num4:
-                if num2 > num4:
+                if num1 > num4:
                     descending = num2, num3, num1, num4
                 else:
                     descending = num2, num3, num4, num1
                 return descending
             else:
-                if num3 > num2:
+                if num3 > num1:
                     descending = num2, num4, num3, num1
                 else:
                     descending = num2, num4, num1, num3
@@ -76,8 +76,8 @@ def ask_num():
                 return descending
 
         # fourth number
-        if num4 > num1 and num4 > num2 and num4 > num1:
-            if num1 > num3 and num1 > num2:
+        if num4 > num1 and num4 > num2 and num4 > num3:
+            if num1 > num2 and num1 > num3:
                 if num2 > num3:
                     descending = num4, num1, num2, num3
                 else:
